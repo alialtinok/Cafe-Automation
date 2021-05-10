@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CafeDBModelStoreContainer" CdmEntityContainer="CafeDBEntities">
+    <EntitySetMapping Name="Icecek">
+      <EntityTypeMapping TypeName="CafeDBModel.Icecek">
+        <MappingFragment StoreEntitySet="Icecek">
+          <ScalarProperty Name="IcecekID" ColumnName="IcecekID" />
+          <ScalarProperty Name="IcecekKategori" ColumnName="IcecekKategori" />
+          <ScalarProperty Name="IcecekAd" ColumnName="IcecekAd" />
+          <ScalarProperty Name="IcecekFiyat" ColumnName="IcecekFiyat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Masa">
+      <EntityTypeMapping TypeName="CafeDBModel.Masa">
+        <MappingFragment StoreEntitySet="Masa">
+          <ScalarProperty Name="MasaNo" ColumnName="MasaNo" />
+          <ScalarProperty Name="Masa_Konum" ColumnName="Masa Konum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Yiyecek">
+      <EntityTypeMapping TypeName="CafeDBModel.Yiyecek">
+        <MappingFragment StoreEntitySet="Yiyecek">
+          <ScalarProperty Name="YiyecekID" ColumnName="YiyecekID" />
+          <ScalarProperty Name="YiyecekKategori" ColumnName="YiyecekKategori" />
+          <ScalarProperty Name="Yiyecekİsim" ColumnName="Yiyecekİsim" />
+          <ScalarProperty Name="Yiyecek_Fiyat" ColumnName="Yiyecek Fiyat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

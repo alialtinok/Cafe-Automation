@@ -1,0 +1,37 @@
+﻿@using KafeOtomasyonu.Models.Entitiy 
+@model List<Icecek> 
+@{
+        ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/MainLayout.cshtml";
+}
+
+<table class="table table-bordered">
+
+    <tr>
+        <th>İçecek Id</th>
+        <th>İçecek Kategori</th>
+        <th>İçecek Ad</th>
+        <th>İçecek Fiyat</th>
+        <th>Güncelle</th>
+        <th>Sil</th>
+
+        <tbody>
+
+            @foreach( var icecekk in Model)
+            {
+            <tr>
+                <td>@icecekk.IcecekID</td>
+                <td>@icecekk.IcecekKategori</td>
+                <td>@icecekk.IcecekAd</td>
+                <td>@icecekk.IcecekFiyat</td>
+                <td> <a class="btn btn-primary">GÜNCELLE</a></td>
+                <td> <a class="btn btn-danger">SİL</a></td>
+                <td><a href="/Icecek/IcecekEkle/@icecekk.IcecekID" class="btn btn-success">İçecek Ekle</a></td>
+            </tr>
+            }
+
+
+        </tbody>
+    </tr>
+
+</table>

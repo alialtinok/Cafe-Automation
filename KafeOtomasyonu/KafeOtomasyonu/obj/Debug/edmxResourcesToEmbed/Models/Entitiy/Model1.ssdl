@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CafeDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CafeDB.dbo.Icecek' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Icecek">
+    <Key>
+      <PropertyRef Name="IcecekID" />
+      <PropertyRef Name="IcecekKategori" />
+      <PropertyRef Name="IcecekAd" />
+      <PropertyRef Name="IcecekFiyat" />
+    </Key>
+    <Property Name="IcecekID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IcecekKategori" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IcecekAd" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IcecekFiyat" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CafeDB.dbo.Masa' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Masa">
+    <Key>
+      <PropertyRef Name="MasaNo" />
+      <PropertyRef Name="Masa Konum" />
+    </Key>
+    <Property Name="MasaNo" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Masa Konum" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'CafeDB.dbo.Yiyecek' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Yiyecek">
+    <Key>
+      <PropertyRef Name="YiyecekID" />
+      <PropertyRef Name="YiyecekKategori" />
+      <PropertyRef Name="Yiyecekİsim" />
+      <PropertyRef Name="Yiyecek Fiyat" />
+    </Key>
+    <Property Name="YiyecekID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="YiyecekKategori" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Yiyecekİsim" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Yiyecek Fiyat" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="CafeDBModelStoreContainer">
+    <EntitySet Name="Icecek" EntityType="Self.Icecek" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Icecek].[IcecekID] AS [IcecekID], 
+    [Icecek].[IcecekKategori] AS [IcecekKategori], 
+    [Icecek].[IcecekAd] AS [IcecekAd], 
+    [Icecek].[IcecekFiyat] AS [IcecekFiyat]
+    FROM [dbo].[Icecek] AS [Icecek]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Masa" EntityType="Self.Masa" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Masa].[MasaNo] AS [MasaNo], 
+    [Masa].[Masa Konum] AS [Masa Konum]
+    FROM [dbo].[Masa] AS [Masa]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Yiyecek" EntityType="Self.Yiyecek" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Yiyecek].[YiyecekID] AS [YiyecekID], 
+    [Yiyecek].[YiyecekKategori] AS [YiyecekKategori], 
+    [Yiyecek].[Yiyecekİsim] AS [Yiyecekİsim], 
+    [Yiyecek].[Yiyecek Fiyat] AS [Yiyecek Fiyat]
+    FROM [dbo].[Yiyecek] AS [Yiyecek]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "IcecekEkle";
+    Layout = "~/Views/Shared/MainLayout.cshtml";
+}
+
+<form class="form-group" method="post">
+
+    <div style="margin-top: 10px">
+        <label>İçecek Kategorisi</label>
+        <input type="text" class="form-control" name="IcecekKategori" required="" />
+    </div>
+
+    <div style="margin-top: 10px">
+        <label>İcecek Adı</label>
+        <input type="text" class="form-control" name="IcecekAd" required="" />
+    </div>
+
+    <div style="margin-top:10px">
+        <label>İcecek Fiyat</label>
+        <input type="text" class="form-control" name="IcecekFiyat" required="" />
+    </div>
+    <br />
+    
+    <button class="btn btn-info">Icecek Ekle</button>
+
+</form>
+
