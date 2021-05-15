@@ -131,6 +131,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IcecekController.cs" />
     <Compile Include="Controllers\MasaController.cs" />
+    <Compile Include="Controllers\YiyecekController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -217,10 +218,12 @@
     <Content Include="Views\Shared\_Navbar.cshtml" />
     <Content Include="Views\Icecek\Index.cshtml" />
     <Content Include="Views\Icecek\IcecekForm.cshtml" />
+    <Content Include="Views\Yiyecek\Index.cshtml" />
+    <Content Include="Views\Yiyecek\YiyecekForm.cshtml" />
+    <Content Include="Views\Masa\MasaForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Yiyecek\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

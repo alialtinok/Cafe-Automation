@@ -1,8 +1,42 @@
-﻿
+﻿@using CafeOtomasyonu.Models.EntityFramework
+@model List<Masa>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Masaları Index</h2>
+
+<a class="btn btn-success" href="/Masa/Kaydet">Masa Ekle</a>
+<br />
+<br />
+<div class="container">
+    <h2>Masalar</h2>
+    <table class="table table-hover">
+        <thead>
+
+            <tr>
+                <th>Masa İsim</th>
+                <th>Masa Hesap</th>
+                <th>Güncelle</th>
+                <th>Sil</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            @foreach (var masa in Model)
+            {
+            <tr>
+                <td>@masa.MasaIsim</td>
+                <td>@masa.MasaHesap</td>
+                <td> <a class="btn btn-primary" href="/Masa/Guncelle/@masa.MasaID">Güncelle</a></td>
+                <td> <a class="btn btn-danger" href="/Masa/Sil/@masa.MasaID">Sil</a></td>
+                <td> <a class="btn btn-warning" href="/Masa/#/@masa.MasaID">Ürün Ekle</a></td>
+            </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
+
 

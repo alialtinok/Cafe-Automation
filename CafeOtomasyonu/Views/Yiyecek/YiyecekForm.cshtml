@@ -1,0 +1,30 @@
+﻿@model CafeOtomasyonu.Models.EntityFramework.Yiyecek
+@{
+    ViewBag.Title = "YiyecekForm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>YiyecekForm</h2>
+
+@using (Html.BeginForm("Kaydet", "Yiyecek", FormMethod.Post))
+{
+    <div class="form-group">
+
+
+        @Html.LabelFor(m => m.YiyecekKategori)
+        @Html.TextBoxFor(m => m.YiyecekKategori, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Yiyecekİsim)
+        @Html.TextBoxFor(m => m.Yiyecekİsim, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.YiyecekFiyat)
+        @Html.TextBoxFor(m => m.YiyecekFiyat, new { @class = "form-control" })
+    </div>
+    @Html.HiddenFor(m => m.YiyecekID)
+
+    <br />
+    <button type="submit" class="btn btn-success">Kaydet</button>
+
+}
