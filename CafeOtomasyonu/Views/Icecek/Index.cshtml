@@ -1,0 +1,37 @@
+﻿@using CafeOtomasyonu.Models.EntityFramework
+@model List<Icecek>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<a class="btn btn-success" href="/Icecek/Kaydet">İcecek Ekle</a>
+<h2>İcecekler Menüsü</h2>
+<table class="table table-hover">
+    <thead>
+
+        <tr>
+            <th>İcecek Kategorisi</th>
+            <th>İcecek Adı</th>
+            <th>İcecek Fiyatı</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+        @foreach (var icecek in Model)
+        {
+        <tr>
+            <td>@icecek.IcecekKategori</td> 
+            <td>@icecek.IcecekAd</td>
+            <td>@icecek.IcecekFiyat</td>
+            <td> <a class="btn btn-primary" href="/Icecek/Guncelle/@icecek.IcecekID">Güncelle</a></td>
+            <td> <a class="btn btn-warning" href="/Icecek/Sil/@icecek.IcecekID">Sil</a></td>
+        </tr>
+        }
+        
+    </tbody>
+</table>
+

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CafeDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Icecek">
+    <Key>
+      <PropertyRef Name="IcecekID" />
+    </Key>
+    <Property Name="IcecekID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IcecekKategori" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IcecekAd" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IcecekFiyat" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Masa">
+    <Key>
+      <PropertyRef Name="MasaID" />
+    </Key>
+    <Property Name="MasaID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MasaIsim" Type="nvarchar" MaxLength="50" />
+    <Property Name="MasaHesap" Type="int" />
+  </EntityType>
+  <EntityType Name="Yiyecek">
+    <Key>
+      <PropertyRef Name="YiyecekID" />
+    </Key>
+    <Property Name="YiyecekID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="YiyecekKategori" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Yiyecekİsim" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="YiyecekFiyat" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="CafeDBModelStoreContainer">
+    <EntitySet Name="Icecek" EntityType="Self.Icecek" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Masa" EntityType="Self.Masa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Yiyecek" EntityType="Self.Yiyecek" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
