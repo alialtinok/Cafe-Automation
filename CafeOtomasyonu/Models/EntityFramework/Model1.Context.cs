@@ -28,5 +28,6 @@ namespace CafeOtomasyonu.Models.EntityFramework
         public virtual DbSet<Icecek> Icecek { get; set; }
         public virtual DbSet<Masa> Masa { get; set; }
         public virtual DbSet<Yiyecek> Yiyecek { get; set; }
+        public virtual DbSet<Admin> Admin { get; set; }
     }
 }

@@ -6,11 +6,13 @@ using System.Web;
 using System.Web.Mvc;
 
 namespace CafeOtomasyonu.Controllers
-{
+{ 
+    [Authorize]
     public class MasaController : Controller
     {
         CafeDBEntities db = new CafeDBEntities();
         // GET: Masa
+       
         public ActionResult Index()
         {
             var model = db.Masa.ToList();

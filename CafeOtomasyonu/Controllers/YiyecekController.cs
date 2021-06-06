@@ -7,10 +7,11 @@ using System.Web.Mvc;
 
 namespace CafeOtomasyonu.Controllers
 {
+    [Authorize]
     public class YiyecekController : Controller
     {
         CafeDBEntities db = new CafeDBEntities();
-
+        
 
         // GET: Yiyecek
         public ActionResult Index()

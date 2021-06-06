@@ -7,10 +7,12 @@ using System.Web.Mvc;
 
 namespace CafeOtomasyonu.Controllers
 {
+    [Authorize]
     public class IcecekController : Controller
     {
+        
         CafeDBEntities db = new CafeDBEntities();
-        // GET: Icecek
+       
         public ActionResult Index()
         {
             var model = db.Icecek.ToList();

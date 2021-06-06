@@ -132,9 +132,13 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IcecekController.cs" />
     <Compile Include="Controllers\MasaController.cs" />
+    <Compile Include="Controllers\SecurityController.cs" />
     <Compile Include="Controllers\YiyecekController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EntityFramework\Admin.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\EntityFramework\Icecek.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -213,6 +217,7 @@
     <Content Include="Template\assets\mail\contact_me.js" />
     <Content Include="Template\assets\mail\contact_me.php" />
     <Content Include="Template\assets\mail\jqBootstrapValidation.js" />
+    <Content Include="Template\css\admin.css" />
     <Content Include="Template\css\styles.css" />
     <Content Include="Template\index.html" />
     <Content Include="Template\js\scripts.js" />
@@ -238,6 +243,7 @@
     <Content Include="Views\Yiyecek\YiyecekForm.cshtml" />
     <Content Include="Views\Masa\MasaForm.cshtml" />
     <Content Include="Views\Anasayfa\Index.cshtml" />
+    <Content Include="Views\Security\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
