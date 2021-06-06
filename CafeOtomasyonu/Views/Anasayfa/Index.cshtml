@@ -1,0 +1,152 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head> 
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Agency - Start Bootstrap Theme</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="~/Template/css/styles.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <h1 style="font-style:italic ; color:yellow">Altınok  Kafe</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#Anasayfa">Anasayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Masa/Index">Masa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Yiyecek/Index">Yiyecekler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Icecek/Index">İçecekler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+
+        <header class="masthead" id="Anasayfa">
+            <div class="container">
+                <div class="masthead-heading text-uppercase">Hoş Geldiniz...</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#About">HAKKIMIZDA</a>
+            </div>
+        </header>
+
+    <!-- About -->
+    <section class="page-section" id="About">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Hakkımızda</h2>
+                <h3 class="section-subheading text-muted"> Restoran şıklığı, cafe rahatlığı…</h3>
+            </div>
+            <p>
+            
+                <br>
+                <strong>Altınok Cafe’de her şey tadında</strong>
+            </p>
+
+            <p>
+                Ayrıcalıklı tarzıyla kendinden övgüyle söz ettiren Altınok Cafe, özel lezzetleri ile de konuklarını büyülemeye devam ediyor.<br>
+                <br>
+                Altınok Cafe'de, her damak tadına uygun eşsiz lezzetler yer alıyor. Formunu korumak isteyenler için Fit menüler,&nbsp; çocuklara özel lezzetler, daha genç damak tatları için wrap ve burgerlar, Türk ve dünya mutfağından seçkin örnekler Altınok Cafe'de sizi bekliyor.<br>
+                <br>
+                Her köşesi sürprizlerle dolu…<br>
+                <br>
+                Girişten başlayan sıra dışı dekorasyon sürprizlerle devam ediyor. Ferah ve etkileyici bir salon, dostlarınızla maç izleyebileceğiniz bir TV corner, Altınok  Cafe’de sizi şaşırtacak detaylardan sadece bazıları.<br>
+                <br>
+                Business Lunch için ideal.<br>
+                <br>
+                Altınok Cafe gün ortasında iş temposundan sıyrılıp kendinizi özel hissetmeniz için birebir. Sıcak sohbet, özel servis, benzersiz lezzetler ve doğal içeceklerimizi tattıktan sonra, kendinizi yenilenmiş gibi hissedeceksiniz.<br>
+                <br>
+                <strong>Gelin, Altınok Cafe’yi keşfedin…</strong>
+            </p>
+        </div>
+    </section>
+  
+
+    <!-- Contact -->
+    <section class="page-section" id="Contact">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">iletişim</h2>      
+                <br />
+            </div>
+            <form id="contactForm">
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control" id="name" type="text" placeholder="İsim *" required="required" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" id="email" type="email" placeholder="Email *" required="required" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group mb-md-0">
+                            <input class="form-control" id="phone" type="tel" placeholder="Telefon *" required="required" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group form-group-textarea mb-md-0">
+                            <textarea class="form-control" id="message" placeholder="Mesajınız *" required="required"></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div id="success"></div>
+                    <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Mesajı Gönder</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">
+                   by @@alialtinok
+                   
+                </div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <p><i class="fa fa-map-marker-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp; Meydan Mahallesi İskenderun/Hatay</p>
+                    <p><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp; <a href="mailto:info.alialtinok@gmail.com">info.alialtinok@gmail.com</a> </p>
+                    
+
+                </div>
+            </div>
+        </div>
+    </footer>
+  
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="~/Template/js/scripts.js"></script>
+</body>
+</html>

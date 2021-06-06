@@ -128,6 +128,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AnasayfaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IcecekController.cs" />
     <Compile Include="Controllers\MasaController.cs" />
@@ -190,6 +191,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\custom.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
@@ -200,6 +202,20 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Template\assets\favicon.ico" />
+    <Content Include="Template\assets\img\close-icon.svg" />
+    <Content Include="Template\assets\img\logos\facebook.svg" />
+    <Content Include="Template\assets\img\logos\google.svg" />
+    <Content Include="Template\assets\img\logos\ibm.svg" />
+    <Content Include="Template\assets\img\logos\microsoft.svg" />
+    <Content Include="Template\assets\img\map-image.png" />
+    <Content Include="Template\assets\img\navbar-logo.svg" />
+    <Content Include="Template\assets\mail\contact_me.js" />
+    <Content Include="Template\assets\mail\contact_me.php" />
+    <Content Include="Template\assets\mail\jqBootstrapValidation.js" />
+    <Content Include="Template\css\styles.css" />
+    <Content Include="Template\index.html" />
+    <Content Include="Template\js\scripts.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -221,6 +237,7 @@
     <Content Include="Views\Yiyecek\Index.cshtml" />
     <Content Include="Views\Yiyecek\YiyecekForm.cshtml" />
     <Content Include="Views\Masa\MasaForm.cshtml" />
+    <Content Include="Views\Anasayfa\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
